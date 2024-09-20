@@ -1,14 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="./favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-    <script type="module" crossorigin src="./assets/index-BmB7j1Vi.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DHqK1tyo.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script type="module" crossorigin src="./assets/index-bUGNM6c0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-R-LK0Kfq.css">
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
 </html>
+<style>
+  body,
+  html {
+    width: 100vw;
+    max-width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+    /* scroll-behavior: smooth; */
+  }
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+    transform-origin: center center 2s;
+  }
+
+  .custom-cursor.scale-up {
+    transform: scale(5);
+    transition: transform 0.3s ease;
+  }
+</style>
